@@ -4,6 +4,9 @@ class DotAgentDeckBeta < Formula
   version "0.25.0-alpha.0"
   license "MIT"
 
+  conflicts_with "dot-agent-deck",
+    because: "both install a `dot-agent-deck` binary; only one channel can be active at a time"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.25.0-alpha.0/dot-agent-deck-darwin-arm64"
@@ -25,10 +28,10 @@ class DotAgentDeckBeta < Formula
   end
 
   def install
-    bin.install Dir["dot-agent-deck-*"].first => "dot-agent-deck-beta"
+    bin.install Dir["dot-agent-deck-*"].first => "dot-agent-deck"
   end
 
   test do
-    assert_match "dot-agent-deck-beta", shell_output("#{bin}/dot-agent-deck-beta --help")
+    assert_match "dot-agent-deck", shell_output("#{bin}/dot-agent-deck --help")
   end
 end

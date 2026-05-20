@@ -4,6 +4,9 @@ class DotAgentDeck < Formula
   version "0.24.7"
   license "MIT"
 
+  conflicts_with "dot-agent-deck-beta",
+    because: "both install a `dot-agent-deck` binary; only one channel can be active at a time"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.24.7/dot-agent-deck-darwin-arm64"
