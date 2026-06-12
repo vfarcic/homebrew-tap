@@ -1,26 +1,26 @@
 class DotAi < Formula
   desc "CLI for the dot-ai Kubernetes AI assistant"
   homepage "https://github.com/vfarcic/dot-ai-cli"
-  version "1.21.0"
+  version "1.21.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.0/dot-ai-darwin-arm64"
-      sha256 "a151a8ffb3adbd68eb7280c5cedae1bdef9cb15b53a7d614d13a357193c3b69c"
+      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.1/dot-ai-darwin-arm64"
+      sha256 "1e4a19921a1b3291b9abed768eae3b76052c6de65a83e215a8134f6f46fe4fae"
     else
-      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.0/dot-ai-darwin-amd64"
-      sha256 "132069847f7a5749d64f2676f837a7467f1362e4e1b937d8f7bfe7b23bfad3bf"
+      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.1/dot-ai-darwin-amd64"
+      sha256 "4fd13c769081fa48c6f3edc1a79e0c9bb1526b361c11985a6fb4b0a30a73eb86"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.0/dot-ai-linux-arm64"
-      sha256 "d833cb0416b8d951ab13554f84e74ea2d334b30b9a62b5692bcaacbc10bf3005"
+      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.1/dot-ai-linux-arm64"
+      sha256 "0a97d8f38fdf13a51c2d8c3e29ffabac078ed53fba2d199e7d187d3cd74bdc34"
     else
-      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.0/dot-ai-linux-amd64"
-      sha256 "480d876d252ef3f7d58e8de16861de32748514c6247b89667cc6bdd51984c3fe"
+      url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.21.1/dot-ai-linux-amd64"
+      sha256 "9d71ccbd7c8d8fa672053c042157e12d1b96d8ab2d895a23bf6b6af0188a544b"
     end
   end
 
