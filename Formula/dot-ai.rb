@@ -7,20 +7,20 @@ class DotAi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.23.1/dot-ai-darwin-arm64"
-      sha256 "028df8d0e42034b4bc19946cdd143600808395e542c5231a840997e2f6b304a6"
+      sha256 "be570b1bcf09cc4e07f6ccd7902d5394237e7a1fab6a90db49abe7c294871695"
     else
       url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.23.1/dot-ai-darwin-amd64"
-      sha256 "b34cdea7846ca425cbd0806edf1e011040083464ddcf7a7080dc8a69eee7c663"
+      sha256 "56727c299a0a6b96022be3539fdb485cedc2c87101d570a05ec7f9737cc4518c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.23.1/dot-ai-linux-arm64"
-      sha256 "ed54ae28e4bd8b1254509c6238fa9da5f0f6cc5d63c31133a79f83927f9685eb"
+      sha256 "0bab6684a8571fb28c5c234e5bb97bdea5bcf0ffb59fcf56579cc640d39bc485"
     else
       url "https://github.com/vfarcic/dot-ai-cli/releases/download/1.23.1/dot-ai-linux-amd64"
-      sha256 "c8c82b6353e5ea0bc54466eae4676331925a96f9bc1d80a75d7c73dfe0cf5f46"
+      sha256 "b8c6622037d005f2c7d7197deeeab63c47b87e49ab369c4c169cd36edb3ff159"
     end
   end
 
