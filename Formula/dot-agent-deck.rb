@@ -1,7 +1,7 @@
 class DotAgentDeck < Formula
   desc "TUI dashboard for monitoring AI agent sessions"
   homepage "https://github.com/vfarcic/dot-agent-deck"
-  version "0.36.0"
+  version "0.36.1"
   license "MIT"
 
   conflicts_with "dot-agent-deck-beta",
@@ -9,21 +9,21 @@ class DotAgentDeck < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.0/dot-agent-deck-darwin-arm64"
-      sha256 "d9839bbe7c203196ce0bbef9156906900d6ce6a0afc27af99bb6b19de5b1a879"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.1/dot-agent-deck-darwin-arm64"
+      sha256 "d51b1954d7d3a13f109816c503370616563e3d009448560c653b6ea4a0d4586d"
     else
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.0/dot-agent-deck-darwin-amd64"
-      sha256 "3ae1600bc069934ff13dec39a84ea5803ba4087e3267c8573671cb4ea689c9d4"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.1/dot-agent-deck-darwin-amd64"
+      sha256 "f63996bccef6dc68c7ee97e124b9798d4294bbb9efa6fef09cb7124780cd2c22"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.0/dot-agent-deck-linux-arm64"
-      sha256 "fab3d01e48fe41f21b0cdf04e0e7340dc03bea7c9ae96ad3ebe6c9303942faf1"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.1/dot-agent-deck-linux-arm64"
+      sha256 "5cabbe35f1f161c3a8423786a17c03b0cb6b24599eb4a5c124ea47e98fc418b3"
     else
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.0/dot-agent-deck-linux-amd64"
-      sha256 "c47f569b184ff023205cc2897b47f86555d5cf5290776851cc622c4a76015441"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.36.1/dot-agent-deck-linux-amd64"
+      sha256 "84423382b6d88f2ec565a2e2721c84093d7795136ebd44b8021d161ec067939d"
     end
   end
 
