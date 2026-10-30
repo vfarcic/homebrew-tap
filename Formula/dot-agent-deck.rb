@@ -1,35 +1,35 @@
 class DotAgentDeck < Formula
   desc "TUI dashboard for monitoring AI agent sessions"
   homepage "https://github.com/vfarcic/dot-agent-deck"
-  version "0.49.2"
+  version "0.49.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-darwin-arm64"
-      sha256 "bfe6be2d588906770246a379361e3ccb73baecb3c40eb14650e769f6cd7be185"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-darwin-arm64"
+      sha256 "25f4f54c04c7b80d6c55252b755f2783f646d0ad0acb49f4d6d78c0a6cc4d919"
     else
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-darwin-amd64"
-      sha256 "da777537c84336322520fa3514543da75ab799d6ad2f698d69dd15f0279b01dd"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-darwin-amd64"
+      sha256 "ac0adfd0c28fe8c9bd15c2497a257ec9f48014ef89b734ad69f12648512ebde6"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-linux-arm64"
-      sha256 "7c40c342d24d6eac10b7ba4b8c7177d464fbe94ad00de0754da574f1dadda365"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-linux-arm64"
+      sha256 "95d4e4c4e96142afe0af4000d0bfd8c3f5f7a25df7dd3fa566e3072e59e90543"
 
       resource "collector" do
-        url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-collector-linux-arm64"
-        sha256 "1ae8d4baffd38115aaf7042da08e8810e083a19bd9f4b0313410fc9874576d6d"
+        url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-collector-linux-arm64"
+        sha256 "f3530e3d9dd1fd47c246aad4520666bcbcd60394cdb0169e36944a3645767e81"
       end
     else
-      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-linux-amd64"
-      sha256 "66b58a477901e58d1bcb9a4722d4eac5ea42d54917464fd6b29b61777b9fd126"
+      url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-linux-amd64"
+      sha256 "8f43002a2b9fd5a258ab407b9b074ca1474a7ba763144f5caa34786a46ad0bfb"
 
       resource "collector" do
-        url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.2/dot-agent-deck-collector-linux-amd64"
-        sha256 "641e48fa770070330e46d28c9b8b7fffbaf38c670e41fe6f604cbc1fde4f2994"
+        url "https://github.com/vfarcic/dot-agent-deck/releases/download/v0.49.3/dot-agent-deck-collector-linux-amd64"
+        sha256 "d4dc9169e79e3ea2edcad50c71aadf2d64374af8aa5d3c2ac1d9f33346494f2d"
       end
     end
   end
